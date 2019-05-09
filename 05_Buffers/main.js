@@ -40,10 +40,13 @@ buffer1.copy(buffer2)
 console.log('after copy buffer2: ' + buffer2);
 
 // Slice Buffer
+buffer1 = new Buffer('BufferSlice');
+buffer2 = buffer1.slice(0,6);
+console.log('after slice buffer2: ' + buffer2);
 
-
-
-
+// Buffer Length
+buffer = new Buffer('12345')
+console.log('buffer length: ' + buffer.length);
 
 
 
